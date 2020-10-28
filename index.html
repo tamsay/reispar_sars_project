@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets/images/endsars.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/carousels.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/styles.css">
+
     <title>EndSARS Now | EndPoliceBrutality Now</title>
+
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <div class="container flex">
+        <div class="wrapper flex">
             <div class="logo-div">
                 <img class="logo" src="assets/images/endsars.png">
             </div>
@@ -30,53 +38,96 @@
 
     <!-- Main Content -->
     <section class="mainContent">
-        <div class="container grid">
-            <div class="mainContent-text">
-                <h1>#EndSARS</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, temporibus voluptatum esse cum consequatur sed velit modi in alias debitis dignissimos deserunt aliquam pariatur repellat corrupti nisi eaque cupiditate dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, temporibus voluptatum esse cum consequatur sed velit modi in alias debitis dignissimos deserunt aliquam pariatur repellat corrupti nisi eaque cupiditate dolor!</p><a href="analytics.html" class="btn btn-outline">Read More</a>
+        <div class="wrapper row">
+            <div class="mainContent-text col-sm-12 col-md-6">
+                <h1 class="text-center">#EndSARS</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, temporibus voluptatum esse cum consequatur sed velit modi in alias debitis dignissimos deserunt aliquam pariatur repellat corrupti nisi eaque cupiditate dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, temporibus voluptatum esse cum consequatur sed velit modi in alias debitis dignissimos deserunt aliquam pariatur repellat corrupti nisi eaque cupiditate dolor!</p>
+                <a href="analytics.html" class="btn btn-outline">Read More</a>
             </div>
-            <div class="mainContent-media">
-                <img src="assets/images/endsars.jpg" alt="endsars">
+            <div class="mainContent-media col-sm-12 col-md-6">
+                <!-- <img src="assets/images/endsars.jpg" alt="endsars"> -->
+                <div class="main-carousel">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!--Mask color-->
+                                <div class="view">
+                                  <video class="video-fluid"  loop  >
+                                  <source src="https://res.cloudinary.com/tamsay/video/upload/v1603847870/endsars1_yih5kj.mp4" type="video/mp4">
+                                  </video>
+                                <div class="mask rgba-black-slight"></div>
+                              </div>
+                              </div>
+                    
+                             
+                              <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <video class="video-fluid" loop autoplay muted>
+                                      <source src="https://res.cloudinary.com/tamsay/video/upload/v1594514658/zadok3_dtuh8y.mp4" type="video/mp4">
+                                    </video>
+                                  <div class="mask rgba-black-slight"></div>
+                                </div>
+                              </div>
+                    
+                              <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                  <!--Video source-->
+                                  <video class="video-fluid"  loop autoplay muted >
+                                    <source src="https://res.cloudinary.com/tamsay/video/upload/v1594514660/zadok1_ztcpak.mp4" type="video/mp4">
+                                  </video>
+                                  <div class="mask rgba-black-strong"></div>
+                                </div>                                
+                              </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
+      
+    
   <!-- Mini-Visuals -->
 
   <section class="visuals-link">
 
-    <!-- <h2 class="md text-center my-2">Supported visuals-link</h2> -->
-
-    <div class="container flex">
+    <div class="wrapper flex">
         <div class="card">
-            <h4>Visuals 1</h4>
+            <h4>Visuals Link 1</h4>
             <img src="assets/images/logos/node.png" alt="">
         </div>
         <div class="card">
-            <h4>Visuals 2</h4>
+            <h4>Visuals Link 2</h4>
             <img src="assets/images/logos/python.png" alt="">
           </div>
           <div class="card">
-            <h4>Visuals 3</h4>
+            <h4>Visuals Link 3</h4>
             <img src="assets/images/logos/csharp.png" alt="">
           </div>
           <div class="card">
-            <h4>Visuals 4</h4>
+            <h4>Visuals Link 4</h4>
             <img src="assets/images/logos/ruby.png" alt="">
           </div>
-          <!-- <div class="card">
-            <h4>PHP</h4>
-            <img src="assets/images/logos/php.png" alt="">
-          </div>
-          <div class="card">
-            <h4>Scala</h4>
-            <img src="assets/images/logos/scala.png" alt="">
-          </div>
-          <div class="card">
-            <h4>Clojure</h4>
-            <img src="assets/images/logos/clojure.png" alt="">
-          </div> -->
+          
     </div>
 
   </section>
@@ -85,7 +136,7 @@
 
   <footer class="footer py-1">
 
-        <div class="container flex">
+        <div class="wrapper flex">
             <div>
                 <h1>Reispar Technologies</h1>
                 <p>Copyright &copy; 2020</p>
@@ -101,6 +152,8 @@
         </div>
   </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

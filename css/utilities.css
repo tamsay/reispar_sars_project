@@ -1,9 +1,9 @@
 :root{
     --primary-color: #047aed;
 }
-.container{
-    margin: 0 auto;
-    padding: 0 40px;
+.wrapper{
+    margin: 0;
+    padding: 0px 40px;
 }
 
 .card{
@@ -213,4 +213,11 @@
 }
 .p-5{
     padding: 4rem;
+}
+
+@media (max-width: 500px){
+    .wrapper{
+        margin: 0;
+        padding: 0px 5px;
+    }
 }
