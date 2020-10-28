@@ -116,7 +116,7 @@ code, pre{
     gap: 5px;
 }
 .mainContent .flex{
-
+    align-items: center;
 }
 .mainContent-text{
     animation: slideInFromLeft 1s ease-in;
@@ -130,12 +130,6 @@ code, pre{
     width: 50%;
 }
 
-.mainContent-media img{
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    height: 100%;
-}
 
 .mainContent-media .main-carousel{
     height: 100%;

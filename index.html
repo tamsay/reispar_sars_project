@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="css/carousels.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -38,7 +38,7 @@
 
     <!-- Main Content -->
     <section class="mainContent">
-        <div class="wrapper row">
+        <div class="wrapper flex row">
             <div class="mainContent-text col-sm-12 col-md-6">
                 <h1 class="text-center">#EndSARS</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, temporibus voluptatum esse cum consequatur sed velit modi in alias debitis dignissimos deserunt aliquam pariatur repellat corrupti nisi eaque cupiditate dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, temporibus voluptatum esse cum consequatur sed velit modi in alias debitis dignissimos deserunt aliquam pariatur repellat corrupti nisi eaque cupiditate dolor!</p>
@@ -56,38 +56,28 @@
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
 
-                        <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
+
                             <div class="carousel-item active">
-                                <!--Mask color-->
                                 <div class="view">
-                                  <video class="video-fluid"  loop autoplay >
+                                    <img src="assets/images/endsars3.jpg" alt="endsars">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="view embed-responsive embed-responsive-16by9">
+                                  <video class="video-fluid"  autoplay muted controls>
                                   <source src="https://res.cloudinary.com/tamsay/video/upload/v1603847870/endsars1_yih5kj.mp4" type="video/mp4">
                                   </video>
-                                <div class="mask rgba-black-slight"></div>
-                              </div>
-                              </div>
-                    
-                             
-                              <div class="carousel-item">
-                                <!--Mask color-->
-                                <div class="view">
-                                    <video class="video-fluid" loop autoplay muted>
-                                      <source src="https://res.cloudinary.com/tamsay/video/upload/v1594514658/zadok3_dtuh8y.mp4" type="video/mp4">
-                                    </video>
-                                  <div class="mask rgba-black-slight"></div>
                                 </div>
                               </div>
                     
                               <div class="carousel-item">
-                                <!--Mask color-->
-                                <div class="view">
-                                  <!--Video source-->
-                                  <video class="video-fluid"  loop autoplay muted >
-                                    <source src="https://res.cloudinary.com/tamsay/video/upload/v1594514660/zadok1_ztcpak.mp4" type="video/mp4">
-                                  </video>
-                                  <div class="mask rgba-black-strong"></div>
-                                </div>                                
+                                <div class="view embed-responsive embed-responsive-16by9">
+                                    <video class="video-fluid" autoplay muted controls>
+                                      <source src="https://res.cloudinary.com/tamsay/video/upload/v1603849150/endsars2_rrzcvo.mp4" type="video/mp4">
+                                    </video>
+                                </div>
                               </div>
                         </div>
                         <!-- Carousel controls -->
@@ -103,8 +93,6 @@
         </div>
     </section>
 
-
-      
     
   <!-- Mini-Visuals -->
 
