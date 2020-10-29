@@ -245,6 +245,7 @@ footer{
     background-color: var(--footer-color);
     color: var(--alt-white);
     text-align: center;
+    padding: 1em 0em;
 }
 footer .social a{
     margin: 0 10px;
