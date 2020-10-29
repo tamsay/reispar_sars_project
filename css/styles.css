@@ -177,7 +177,7 @@ code, pre{
 
 .visuals .card{
     width: 47.5%;
-    min-height: 50vh;
+    min-height: 35vh;
 }
 
 .visuals .card img{
@@ -293,36 +293,234 @@ footer .flex{
 }
 
 /* Tablets and Under */
-@media all and (max-width: 768px){
-    .grid, .mainContent .grid, .stats .grid, .cli .grid, .cloud .grid,
-    .visuals .grid, .analytics .grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
+@media all and (min-width:501px) and (max-width: 1023px){
 
-    .mainContent{
-        height: auto;
-    }
-
-    .mainContent-text{
-        text-align: center;
-        margin-top: 40px;
-        animation: slideInFromTop 1s ease-in;
-    }
-
-    .mainContent-media{
-        justify-self: center;
-        margin: auto;
-    }
-
-    .visuals .grid > div:first-child,
-    .visuals .grid > div:nth-child(2){
-        grid-column: 1;
-    }
+        /* Navbar */
+        .navbar{
+            padding: 5px 0px;
+            margin: 0%;
+        }
+        
+        .navbar .flex {
+            flex-direction: column;
+        }
+        
+        .navbar .logo-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .navbar .logo{
+            width: 25%;
+        }
+        .navbar nav{
+            width: 100%;
+            padding: 0 10px;
+        }
+        .navbar ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0px;
+            margin: 0%;
+        }
+        
+        .navbar a{
+            padding: 5px;
+            margin: 0px;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+    
+        /* mainContent Section */
+    
+        .mainContent{
+            margin: 0%;
+            padding: 0%;
+        }
+        .mainContent h1{
+            font-size: 2rem;
+            color: #333;
+            font-weight: bold;
+            margin: 0%;
+        }
+        .mainContent p{
+            margin: 15px 0;
+            font-size: 1rem;
+            color: #333;
+            text-align: left;
+            font-weight: 600;
+            line-height: 1.5rem;
+        }
+        .mainContent a{
+            width: fit-content;
+            align-self: center;
+        }
+        .mainContent a:hover{
+            color: var(--text-color);
+        }
+        .mainContent .grid{
+            grid-template-columns: 50% 50%;
+            gap: 5px;
+        }
+      
+        .mainContent-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation: slideInFromLeft 1s ease-in;
+            width: 100%;
+            padding: 10px 10px;
+            margin: 0%;
+        }
+        .mainContent-media{
+            padding: 0;
+            margin: 0%;
+            animation: slideInFromRight 1s ease-in;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+    
+        .mainContent-media img{
+            width: 100%;
+            padding: 0%;
+            margin: 0%;
+            height: 100%;
+        }
+    
+        .mainContent-media .main-carousel{
+            height: 100%;
+        }
+    
+      /* Visuals-link Section */
+        .visuals-link{
+            padding: 40px 10px;
+        }
+        .visuals-link .flex{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .visuals-link .card{
+            text-align: center;
+            width: 100%;
+            margin: 10px 0px;
+        }
+    
+        .visuals-link .card h4{
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .visuals-link .card img{
+            width: 150px;
+            height: 150px;
+            align-self: center;
+        }
+    
+        .visuals-link .card:hover{
+            transform: translateY(0px);
+        }
+      
+        /* Visual-reports page */
+    
+        .visuals{
+            padding: 5px 0px 40px 0px;
+        }
+    
+        .visuals .flex{
+            flex-wrap: wrap;
+        }
+    
+        .visuals .card{
+            width: 100%;
+            min-height: 30vh;
+        }
+    
+        .visuals .card img{
+            width: 10rem;
+        }
+    
+        /* Analytics Page */
+        .analytics{
+            padding: 5px 10px 40px 10px;
+        }
+        .analytics h3{
+            margin: 5px 0;
+        }
+    
+        .analytics .flex{
+            flex-direction: column;
+        }
+    
+        .analytics .card{
+            width: 100%;
+            min-height: 30vh;
+        }
+    
+        .analytics .card img{
+            width: 20%;
+        }
+    
+        /* API and DATA Page */
+        .get-api{
+            padding: 5px 10px 40px 10px;
+        }
+    
+        .get-api .flex{
+            flex-wrap: wrap;
+        }
+    
+        .get-api .card{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 5px;
+        }
+    
+        .get-api .card .header{
+            justify-content: flex-start;
+        }
+        .get-api .card .header img{
+            width: 20%;
+            padding-right: 20px;
+        }
+    
+        .get-api .card .header h4{
+            font-size: 2rem;
+        }
+    
+        .get-api .card .body p{
+            font-size: 1.25rem;
+            text-align: left;
+        }
+    
+    
+        /* Footer */
+        footer .flex{
+            flex-direction: column;
+        }
+        footer{
+            text-align: center;
+        }
+        footer .flex div:first-child{
+            margin-bottom: 20px;
+        }
+        footer .flex div:first-child p{
+            margin: 0%;
+            padding: 0%;
+        }
+        footer .flex div:first-child h1{
+            margin: 0%;
+            padding: 0%;
+        }
+        footer .social a{
+            margin: 0 10px;
+            color: var(--alt-white);
+        }
 }
 
 /* Mobile */
-@media (max-width: 500px){
+@media  (max-width: 500px){
     
     /* Navbar */
     .navbar{
@@ -358,7 +556,7 @@ footer .flex{
         padding: 5px;
         margin: 0px;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     /* mainContent Section */
@@ -497,8 +695,8 @@ footer .flex{
 
     .get-api .flex{
         flex-wrap: wrap;
-        margin: 0%;
-        padding: 0%;
+        /* margin: 0%;
+        padding: 0%; */
     }
 
     .get-api .card{
@@ -549,4 +747,24 @@ footer .flex{
         color: var(--alt-white);
     }
 
+}
+
+@media (max-width:320px){
+
+    /* Navbar section */
+    .navbar a{
+        font-size: 0.375rem;
+        font-weight: bold;
+    }
+
+    /* footer section */
+    footer .flex div:first-child p{
+        font-size: 0.75rem;
+    }
+    footer .flex div:first-child h1{
+        font-size: 1rem;
+    }
+    footer .social a{
+        font-size: 0.5rem;
+    }
 }
